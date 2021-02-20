@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#63ffb9"
+    android:id="@+id/lvparent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:text="USER SIGN UP"
+            android:textColor="#b71540"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:text="Full name:"
+        android:textSize="16sp"
+
+        />
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Enter full name"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+
+        android:padding="5dp"
+        android:textColor="#2012e7" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:text=" Email:"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/edtEmailAddress"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Email Address"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:textColor="#2012e7" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:text="Mobile:"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/edtMobile"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Enter mobile number"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:padding="5dp"
+        android:inputType="phone"
+        android:textColor="#2012e7" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:text="Password:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Enter Password"
+
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:textColor="#2012e7" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:text="Conform Password:"
+        android:textSize="16sp" />
+
+
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Confirm Password"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textColor="#2d3436" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="SIGN UP"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/rtol"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Existing user, Click here!"/>
+
+
+    <ProgressBar
+        android:id="@+id/pbbar"
+        android:layout_width="wrap_content"
+      android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
